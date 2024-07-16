@@ -10,12 +10,12 @@ namespace Para.Bussiness.Validations
             RuleFor(x => x.FirstName)
                 .NotEmpty()
                 .Length(3, 20)
-                .WithMessage("First name length must be between 3-50 characters !");
+                .WithMessage("First name length must be between 3-20 characters !");
 
             RuleFor(x => x.LastName)
                 .NotEmpty()
                 .Length(2, 20)
-                .WithMessage("Last name length must be between 2-50 characters !");
+                .WithMessage("Last name length must be between 2-20 characters !");
 
             RuleFor(x => x.IdentityNumber)
                 .NotEmpty()
